@@ -23,6 +23,16 @@ export default function HeroSection() {
                 />
             </div>
 
+            {/* Floating Sparkles */}
+            <div className="absolute top-[12%] left-[20%] w-1 h-1 rounded-full bg-white shadow-[0_0_10px_3px_rgba(255,255,255,0.8)] animate-pulse" />
+            <div className="absolute top-[18%] right-[25%] w-1.5 h-1.5 rounded-full bg-white shadow-[0_0_15px_4px_rgba(255,255,255,0.9)] animate-pulse delay-75" />
+            <div className="absolute top-[30%] left-[15%] w-1 h-1 rounded-full bg-white shadow-[0_0_8px_2px_rgba(255,255,255,0.7)] animate-pulse delay-150" />
+            <div className="absolute top-[22%] right-[18%] w-1 h-1 rounded-full bg-white shadow-[0_0_10px_3px_rgba(255,255,255,0.8)] animate-pulse delay-100" />
+            <div className="absolute top-[35%] right-[12%] w-2 h-2 rounded-full bg-white shadow-[0_0_20px_5px_rgba(255,255,255,0.9)] animate-pulse delay-200" />
+            <div className="absolute top-[45%] left-[8%] w-1 h-1 rounded-full bg-white shadow-[0_0_8px_2px_rgba(255,255,255,0.6)] animate-pulse delay-300" />
+            <div className="absolute top-[50%] right-[22%] w-1 h-1 rounded-full bg-white shadow-[0_0_10px_3px_rgba(255,255,255,0.7)] animate-pulse delay-150" />
+            <div className="absolute top-[8%] left-[45%] w-1 h-1 rounded-full bg-white shadow-[0_0_8px_2px_rgba(255,255,255,0.7)] animate-pulse delay-500" />
+
             {/* Main Content */}
             <div className="relative z-10 flex flex-col items-center w-full max-w-5xl px-6 text-center">
                 
