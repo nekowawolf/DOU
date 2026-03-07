@@ -1,17 +1,17 @@
 'use client';
 
-import Image from 'next/image';
 import { IoArrowUp } from "react-icons/io5";
 import { FiPlus } from "react-icons/fi";
 import { IoMdMic } from "react-icons/io";
+import Dou3DModel from './Dou3DModel';
 
 export default function HeroSection() {
     return (
-        <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#8FA8E8] via-[#6B8DD6] to-[#2948FF]">
-            
+        <div id="hero-section" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#8FA8E8] via-[#6B8DD6] to-[#2948FF]">
+
             {/* Animated Grid Pattern */}
             <div className="absolute inset-0 opacity-10 pointer-events-none">
-                <div 
+                <div
                     className="w-full h-full"
                     style={{
                         backgroundImage: `
@@ -35,16 +35,10 @@ export default function HeroSection() {
 
             {/* Main Content */}
             <div className="relative z-10 flex flex-col items-center w-full max-w-5xl px-6 text-center">
-                
+
                 {/* Logo */}
-                <div className="mb-8 relative w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-48 lg:h-48">
-                    <Image
-                        src="/img/DouAI.png"
-                        alt="DOU Logo"
-                        fill
-                        className="object-contain drop-shadow-[0_0_40px_rgba(251,110,254,0.4)]"
-                        priority
-                    />
+                <div className="mb-8 relative w-48 h-48">
+                    <Dou3DModel />
                 </div>
 
                 <p className="text-lg sm:text-xl md:text-2xl font-medium text-white/90 tracking-wide mb-2">
@@ -67,7 +61,7 @@ export default function HeroSection() {
 
                     {/* Input Area */}
                     <div className="relative flex items-center w-full bg-white/80 backdrop-blur-md rounded-full px-3 sm:px-5 py-2.5 sm:py-4 border border-white/50 shadow-inner">
-                        
+
                         <FiPlus className="w-5 h-5 sm:w-6 sm:h-6 text-gray-500 mr-2 sm:mr-3 shrink-0" />
 
                         <input
